@@ -3,6 +3,6 @@ This repository contains solutions for my database labs covering SQL queries, in
 * **Basic Select & Filters**
 * **Inner, Left, and Full Outer Joins**
 * **Data Manipulation (INSERT, UPDATE)**
-* **Normalization Concepts (1NF)**
+* **Normalization Concepts (1NF,2NF,3NF)**
 
 Done using **DBeaver** on **Ubuntu Linux**
