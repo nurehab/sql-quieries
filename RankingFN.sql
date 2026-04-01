@@ -12,7 +12,10 @@
 
 -- el syntax beta3ha ---> select *, Row_Number() over (order by sal desc) as RN
 -- betrtb w te3ml coloumn feeeh sequential numbers (arkam bl taslsol) ---> 1 2 3 4 5 6 7 8 9 .....
-
+-- feeeeh m3aha el partition by betb2a de betegy 2bl el order by de shabah el grouping bs de msh bt-hide el rows y3ni lw kont 3amel :
+-- select * , Row_Number() over (partition by did order by sal desc) as RN 
+-- hena hat2sm el partition 3la asas el did w bl nesba ll arkam kol partition leeeh el arkda beta3to
+-- y3ni did rakam 10 hwa 3ebara homa 6 rows f hayb2a 1,2,3,4,5,6 el did ely ba3deh 20 kan 4 rows hayb2a 1,2,3,4 ----> f kol partition beybd2 mn el awel el order 
 
 -- Dense_rank()
 -- ============
@@ -20,7 +23,7 @@
 -- el syntax beta3ha ---> select *, Dense_rank() over (order by sal desc) as DR
 -- nafs el Row_Number bs el far2 el coloumn ely beyt3ml el arkam feeh batre2a mo3na 
 -- y3ni el values beta3t el 7aga ely ma3molha order by betakhod nafs el rank y3nii lw etrtb en feeh 2 rows el sal fehom b 10000 w homa awel 2 el nums beta3thom hatb2a 1 1
-
+-- nafs 7ewar el partition bs bl order beta3ha b2a ely hwa el tiesS
 
 -- NTile(GROUP) NTile === Number of tiles
 -- ======================================
@@ -52,3 +55,4 @@
 -- el ranking Fns beyb2a feha subquery f el supquery akher 7aga bafkr feha
 --  la yofdl estkhdam 2 or 3 Ranking Fn m3 b3d f nafs el query hwa 3ady bs la yofdl 3shan hay7sl laghbta w tashatot f case lw el order f kol ranking fn mokhtlf 3n el tany f el output beta3 el query hayb2a shaklo moshtet gdnnn w hay2sr gamed f el preformance hayb2a bate2 gdn gdn by3ml 7aga esmha (Multiple Sorts)
 -- m3 el ranking fn el subquery hya el sadek el sadok ely benn7tghom 3shan lezom el felter l2n hena el where btt-excute b4 el select f hwa hay3rf el alias name ely enta 3amlo 3la ay asas f hayb2a 3la asas el subquery f el subquery hena 7aga must be 
+-- el kalam da kolo yenf3 yet3ml m3ah el joins
